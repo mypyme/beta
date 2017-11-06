@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mypyme-client-side-solution",
+    "id": "cb4f2f39-544c-440c-b053-305397996b6d",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/mypyme.sppkg"
+  }
+}
