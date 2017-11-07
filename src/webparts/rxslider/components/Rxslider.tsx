@@ -8,8 +8,13 @@ export default class Rxslider extends React.Component<IRxsliderProps, {}> {
 
 
   public render(): React.ReactElement<IRxsliderProps> {
+
+    let slideWidth = {
+      width : this.props.slides.connection.width
+    };
+
     return (
-        <div className='slider-container'>
+        <div className='slider-container' style={slideWidth}>
         {
          this.props.slides.slides ?  this.props.slides.slides.map(function (item, index) {
               return <div>

@@ -8,7 +8,8 @@ export interface IWebpartState {
     imageFieldName: string;
     linkFieldName: string;
     descriptionFieldName: string,
-    titleName: string
+    titleName: string,
+    sliderWidth: string
   }
 }
 
@@ -34,7 +35,8 @@ export const initialState: IWebpartState = {
     imageFieldName: null,
     linkFieldName: null,
     descriptionFieldName: null,
-    titleName: null
+    titleName: null,
+    sliderWidth: null
   }
 };
 

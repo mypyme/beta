@@ -24,6 +24,7 @@ export interface IRxsliderWebPartProps {
   Image: string;
   Title: string;
   List: string;
+  Width: string;
 }
 
 export default class RxsliderWebPart extends BaseClientSideWebPart<IRxsliderWebPartProps> {
@@ -75,7 +76,6 @@ export default class RxsliderWebPart extends BaseClientSideWebPart<IRxsliderWebP
         slides: this.store.getState().webpart
       }
     );
-
     ReactDom.render(element, this.domElement);
     try {
       $('.slider-container').slick({
@@ -102,7 +102,8 @@ protected getWebpartProperties() {
     'listField' : this.properties.List,
     'imageField' : this.properties.Image,
     'titleField': this.properties.Title,
-    'linkField' : this.properties.Link
+    'linkField' : this.properties.Link,
+    'width': this.properties.Width
   }
   return webpartProperties;
 }
@@ -136,6 +137,9 @@ protected getWebpartProperties() {
                 }),
                 PropertyPaneTextField('Link', {
                   label: 'Link Field'
+                }),
+                PropertyPaneTextField('Width', {
+                  label: 'Component Width'
                 })
               ]
             }
