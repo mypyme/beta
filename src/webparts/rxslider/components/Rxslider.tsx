@@ -20,7 +20,7 @@ export default class Rxslider extends React.Component<IRxsliderProps, {}> {
               return <div>
                 <div><a href={item.link}>{item.title}</a></div>
                 <img src={item.image}></img>
-                <div>{item.description}</div>
+                <div dangerouslySetInnerHTML={{ __html : item.description }}/>
               </div>
             }.bind(this)) : ''
         }
