@@ -9,6 +9,14 @@
           "manifest": "./src/webparts/rxslider/RxsliderWebPart.manifest.json"
         }
       ]
+    },
+    "centralnews-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/centralnews/CentralnewsWebPart.js",
+          "manifest": "./src/webparts/centralnews/CentralnewsWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -16,6 +24,7 @@
     "SlideWebPartStrings": "lib/webparts/slide/loc/{locale}.js",
     "RxsliderWebPartStrings": "lib/webparts/rxslider/loc/{locale}.js",
     "CentralNewsWebPartStrings": "lib/webparts/centralNews/loc/{locale}.js",
-    "EventosWebPartStrings": "lib/webparts/eventos/loc/{locale}.js"
+    "EventosWebPartStrings": "lib/webparts/eventos/loc/{locale}.js",
+    "CentralnewsWebPartStrings": "lib/webparts/centralnews/loc/{locale}.js"
   }
 }
