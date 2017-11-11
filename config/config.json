@@ -25,6 +25,22 @@
           "manifest": "./src/webparts/events/EventsWebPart.manifest.json"
         }
       ]
+    },
+    "tabsnews-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tabsnews/TabsnewsWebPart.js",
+          "manifest": "./src/webparts/tabsnews/TabsnewsWebPart.manifest.json"
+        }
+      ]
+    },
+    "menu-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/menu/MenuWebPart.js",
+          "manifest": "./src/webparts/menu/MenuWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -34,6 +50,8 @@
     "CentralNewsWebPartStrings": "lib/webparts/centralNews/loc/{locale}.js",
     "EventosWebPartStrings": "lib/webparts/eventos/loc/{locale}.js",
     "CentralnewsWebPartStrings": "lib/webparts/centralnews/loc/{locale}.js",
-    "EventsWebPartStrings": "lib/webparts/events/loc/{locale}.js"
+    "EventsWebPartStrings": "lib/webparts/events/loc/{locale}.js",
+    "TabsnewsWebPartStrings": "lib/webparts/tabsnews/loc/{locale}.js",
+    "MenuWebPartStrings": "lib/webparts/menu/loc/{locale}.js"
   }
 }
