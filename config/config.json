@@ -41,6 +41,14 @@
           "manifest": "./src/webparts/menu/MenuWebPart.manifest.json"
         }
       ]
+    },
+    "usersdirectory-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/usersdirectory/UsersdirectoryWebPart.js",
+          "manifest": "./src/webparts/usersdirectory/UsersdirectoryWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -52,6 +60,7 @@
     "CentralnewsWebPartStrings": "lib/webparts/centralnews/loc/{locale}.js",
     "EventsWebPartStrings": "lib/webparts/events/loc/{locale}.js",
     "TabsnewsWebPartStrings": "lib/webparts/tabsnews/loc/{locale}.js",
-    "MenuWebPartStrings": "lib/webparts/menu/loc/{locale}.js"
+    "MenuWebPartStrings": "lib/webparts/menu/loc/{locale}.js",
+    "UsersdirectoryWebPartStrings": "lib/webparts/usersdirectory/loc/{locale}.js"
   }
 }
