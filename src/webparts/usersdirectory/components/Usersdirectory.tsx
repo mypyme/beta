@@ -15,7 +15,8 @@ export default class Usersdirectory extends React.Component<IUsersdirectoryProps
               return <div>
                 <img src={item.picture}/>
                 <span>{item.name}</span>
-                <span>{item.department}</span>
+                <div>{item.department}</div>
+                <div>WorkPhone:{item.workPhone}</div>
               </div>
             }) : ''
         } 

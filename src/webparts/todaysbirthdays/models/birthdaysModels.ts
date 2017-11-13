@@ -8,16 +8,16 @@ import { PeopleHelper } from '../../../Helpers/peopleHelper'
     name : string,
     department : string,
     picture : string,
-    workPhone
+    workPhone: string
 }
 
-  export class DirectoryModel {
+  export class BirthdaysModel {
   
       private _context : any;
-      private static _instance : DirectoryModel = null;
+      private static _instance : BirthdaysModel = null;
   
-      public getAllItems(token : string): Promise<IUser> {
-        return PeopleHelper.SearchUsers(token, this._context).then((response)=>{
+      public getTodaysBirthdays(managedPropertyName : string): Promise<IUser> {
+        return PeopleHelper.GetTodaysBirthdaysUsers(this._context, managedPropertyName).then((response)=>{
             return response.map((prop)=>{
                 let user : IUser = {
                     name : this.getPropertyValue(prop, 'PreferredName'),
@@ -30,9 +30,9 @@ import { PeopleHelper } from '../../../Helpers/peopleHelper'
         });
       }
   
-      public static Instance() : DirectoryModel {
+      public static Instance() : BirthdaysModel {
           if(this._instance == null) {
-              this._instance = new DirectoryModel();
+              this._instance = new BirthdaysModel();
           }
           return this._instance;
       }

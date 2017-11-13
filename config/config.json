@@ -49,6 +49,14 @@
           "manifest": "./src/webparts/usersdirectory/UsersdirectoryWebPart.manifest.json"
         }
       ]
+    },
+    "todaysbirthdays-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/todaysbirthdays/TodaysbirthdaysWebPart.js",
+          "manifest": "./src/webparts/todaysbirthdays/TodaysbirthdaysWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -61,6 +69,7 @@
     "EventsWebPartStrings": "lib/webparts/events/loc/{locale}.js",
     "TabsnewsWebPartStrings": "lib/webparts/tabsnews/loc/{locale}.js",
     "MenuWebPartStrings": "lib/webparts/menu/loc/{locale}.js",
-    "UsersdirectoryWebPartStrings": "lib/webparts/usersdirectory/loc/{locale}.js"
+    "UsersdirectoryWebPartStrings": "lib/webparts/usersdirectory/loc/{locale}.js",
+    "TodaysbirthdaysWebPartStrings": "lib/webparts/todaysbirthdays/loc/{locale}.js"
   }
 }
