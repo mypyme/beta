@@ -61,7 +61,6 @@
   },
   "externals": {},
   "localizedResources": {
-    "SlideWebPartStrings": "lib/webparts/slide/loc/{locale}.js",
     "RxsliderWebPartStrings": "lib/webparts/rxslider/loc/{locale}.js",
     "CentralNewsWebPartStrings": "lib/webparts/centralNews/loc/{locale}.js",
     "EventosWebPartStrings": "lib/webparts/eventos/loc/{locale}.js",

@@ -23,7 +23,7 @@ export class PeopleHelper {
     public static GetTodaysBirthdaysUsers(context : any, managedPropertyName:string) : Promise<any> {
         let currentDate = new Date();
         let currentMonth = currentDate.getUTCMonth()+1;
-        let currentDay = currentDate.getUTCDate()+1;
+        let currentDay = currentDate.getUTCDate();
         
          return context.spHttpClient.get(encodeURI(context.pageContext.web.absoluteUrl + `/_api/search/query?querytext='*'&sourceid='b09a7990-05ea-4af9-81ef-edfab16c4e31'&selectproperties='PreferredName,WorkEmail,Department,PictureURL,WorkPhone'&refinementfilters='`+managedPropertyName+`:datetime("2000-`+currentMonth+`-`+currentDay+`")'`), SPHttpClient.configurations.v1, {
              headers: {
