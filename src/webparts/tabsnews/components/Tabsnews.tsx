@@ -11,15 +11,17 @@ export default class Tabsnews extends React.Component<ITabsnewsProps, {}> {
     const headers = this.props.News ? this.props.News.map((value)=>{
       return value.categoria;
     }) : null; 
-    
+     
        return (
-         <div>
+         <div className={styles.tabsnews}>
            <Tabs headers={headers}>
              { this.props.News ?  this.props.News.map(element => {
                return <Tab>
-                 <div><a href={element.content.Link}>{element.content.Titulo}</a></div>
                  <img src={element.content.Imagen}></img>
-                 <div  dangerouslySetInnerHTML={{ __html : element.content.Noticia }} />
+                 <div className={styles.newstext}>
+                    <b><a href={element.content.Link}>{element.content.Titulo}</a></b>
+                    <div  dangerouslySetInnerHTML={{ __html : element.content.Noticia }} />
+                 </div>
                </Tab>
 
              }) :''
