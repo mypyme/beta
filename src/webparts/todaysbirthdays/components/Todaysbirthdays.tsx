@@ -6,15 +6,18 @@ import { escape } from '@microsoft/sp-lodash-subset';
 export default class Todaysbirthdays extends React.Component<ITodaysbirthdaysProps, {}> {
   public render(): React.ReactElement<ITodaysbirthdaysProps> {
     return ( 
-      <div>
-      <h3>Today's Birthdays</h3>
+      <div className={styles.todaysbirthdays}>
+      <h3>Nuestros Cumpleaños</h3>
       {
           this.props.users ? this.props.users.map(function (item, index) {
             return <div>
               <img src={item.picture}/>
-              <span>{item.name}</span>
-              <div>Department:{item.department}</div>
-              <div>WorkPhone:{item.workPhone}</div>
+              <div className={styles.detail}>
+                <span>{item.name}</span>
+                <div>{item.department}</div>
+                <div>{item.workPhone}</div>
+                <div className={styles.highlight}>{item.workEmail}</div>
+              </div>
             </div>
           }) : ''
       } 

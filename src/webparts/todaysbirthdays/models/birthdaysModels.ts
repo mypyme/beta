@@ -8,7 +8,8 @@ import { PeopleHelper } from '../../../Helpers/peopleHelper'
     name : string,
     department : string,
     picture : string,
-    workPhone: string
+    workPhone: string,
+    workEmail: string
 }
 
   export class BirthdaysModel {
@@ -23,7 +24,8 @@ import { PeopleHelper } from '../../../Helpers/peopleHelper'
                     name : this.getPropertyValue(prop, 'PreferredName'),
                     picture : this.getPropertyValue(prop, 'PictureURL'),
                     department : this.getPropertyValue(prop, 'Department'),
-                    workPhone: this.getPropertyValue(prop, 'WorkPhone')
+                    workPhone: this.getPropertyValue(prop, 'WorkPhone'),
+                    workEmail: this.getPropertyValue(prop, 'WorkEmail')
                 }
                 return user;
             });
